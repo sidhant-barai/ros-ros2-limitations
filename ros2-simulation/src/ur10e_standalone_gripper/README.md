@@ -9,13 +9,6 @@ This subdirectory contains the ROS 2 (Humble/Foxy) pipeline developed to address
 
 ---
 
-## 📸 Simulation Screenshots
-All visual outputs, URDF trees, and RViz displays for this section are archived in the root repository media folder:
-
-- **ROS 2 Standalone Assembly:** `../media/ros2_standalone_gripper.png`
-
----
-
 ## 🚀 Execution & Command Reference
 
 To launch the ROS 2 standalone description and inspect TF trees:
