@@ -11,13 +11,6 @@ This subdirectory handles the vision stack integration for the industrial manipu
 
 ---
 
-## 📸 Perception Results
-Visual outputs for depth streams, point cloud reconstructions, and sensor mount assemblies are archived in the main repository media folder:
-
-- **Point Cloud Visualization:** `../media/kinect_point_cloud.png`
-
----
-
 ## 🚀 Execution & Command Reference
 
 ### 1. Launch Kinect Sensor in Gazebo
