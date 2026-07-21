@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="ur10e_robotiq_standalone">
+
+  <!-- Include UR10e Macro Definition -->
+  <xacro:include filename="$(find ur_description)/urdf/ur.urdf.xacro" />
+  
+  <!-- Include Robotiq 2F-140 Gripper Macro Definition -->
+  <xacro:include filename="$(find robotiq_description)/urdf/robotiq_2f_140.urdf.xacro" />
+
+  <!-- Define Arguments -->
+  <xacro:arg name="ur_type" default="ur10e"/>
+  <xacro:arg name="robot_ip" default="0.0.0.0"/>
+
+  <!-- Instantiated UR10e Robot -->
+  <xacro:ur_robot
+    name="ur10e"
+    tf_prefix=""
+    parent="world"
+    joint_limits_parameters_file="$(find ur_description)/config/$(arg ur_type)/joint_limits.yaml"
+    kinematics_parameters_file="$(find ur_description)/config/$(arg ur_type)/default_kinematics.yaml"
+    physical_parameters_file="$(find ur_description)/config/$(arg ur_type)/physical_parameters.yaml"
+    visual_parameters_file="$(find ur_description)/config/$(arg ur_type)/visual_parameters.yaml">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:ur_robot>
+
+  <!-- Base Link Linkage (World Frame) -->
+  <link name="world" />
+
+  <!-- Standalone Fixed Joint: Attaching Gripper to UR10e Flange -->
+  <joint name="ur10e_tool0_to_robotiq_base" type="fixed">
+    <parent link="tool0" />
+    <link name="robotiq_arg2f_base_link" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <!-- Instantiate Robotiq Gripper -->
+  <xacro:robotiq_2f_140 
+    parent="robotiq_arg2f_base_link" 
+    prefix="" />
+
+</robot>
