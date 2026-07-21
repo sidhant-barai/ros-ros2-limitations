@@ -14,14 +14,6 @@ The simulation environment runs inside **Gazebo** with motion planning, joint tr
 
 ---
 
-## 📸 Simulation Screenshots
-All visual proof, Gazebo snapshots, and RViz motion plans for this stack are archived in the main repository media folder:
-
-- **Gazebo Workspace Environment:** `../../media/ros1_gazebo_workspace.png`
-- **RViz Motion Planning & Trajectories:** `../../media/ros1_pick_place_rviz.png`
-
----
-
 ## 🚀 Execution & Command Reference
 
 ### 1. Launch the Simulation Environment (Gazebo + RViz)
