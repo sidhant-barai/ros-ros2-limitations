@@ -12,6 +12,3 @@ This directory contains all architecture flowcharts, pipeline diagrams, and exec
 | `camerasavingdata2.png` | Secondary architecture layout for sensor data processing | Architecture Docs |
 | `kineticcameravisual.png` | Visual feedback of camera tracking, TF frames, and point cloud alignment | Root `README.md`, `kinect_perception/README.md` |
 
----
-
-> **Note:** All visual assets are stored flat in this folder to ensure consistent link paths across subfolder documentation.
