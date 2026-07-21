@@ -8,15 +8,21 @@ The simulation environment runs inside **Gazebo** with motion planning, joint tr
 
 ## 🛠️ Kinematic & Control Architecture
 - **Robot Arm:** Universal Robots UR10e (6-DOF)
-- **End-Effector:** Robotiq 2F-140 Gripper integrated directly onto the `tool0` mount.
-- **IK Solver:** `KDLKinematicsPlugin` (numerical) running within MoveIt's interface.
-- **Control Interface:** `JointTrajectoryController` passing planning paths directly to the simulated hardware controllers over Gazebo.
+- **End-Effector:** Robotiq 2F-140 Gripper integrated directly onto the `tool0` flange.
+- **IK Solver:** `KDLKinematicsPlugin` running within MoveIt's planning group.
+- **Control Interface:** `JointTrajectoryController` passing interpolated waypoints directly to Gazebo hardware interfaces.
+
+---
+
+## 📸 Simulation Screenshots
+All visual proof, Gazebo snapshots, and RViz motion plans for this stack are archived in the main repository media folder:
+
+- **Gazebo Workspace Environment:** `../../media/ros1_gazebo_workspace.png`
+- **RViz Motion Planning & Trajectories:** `../../media/ros1_pick_place_rviz.png`
 
 ---
 
 ## 🚀 Execution & Command Reference
-
-To launch this environment and execute the Pick & Place task, open your terminal and follow these steps:
 
 ### 1. Launch the Simulation Environment (Gazebo + RViz)
 ```bash
