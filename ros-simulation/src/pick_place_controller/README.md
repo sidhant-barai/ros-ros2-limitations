@@ -14,17 +14,6 @@ The simulation environment runs inside **Gazebo** with motion planning, joint tr
 
 ---
 
-## 📸 Simulation Results
-
-> **Placeholder Note:** Add your Gazebo or RViz execution screenshots in this section or link to the media folder.
-
-| Simulation State | Description |
-|---|---|
-| `<Add Pick Image Link>` | **Step 1: Pick Phase** – UR10e reaches the target coordinates inside the Gazebo workspace using Cartestian Inverse Kinematics planning. |
-| `<Add Place Image Link>` | **Step 2: Place Phase** – The gripper closes on the simulated object, lifts it, and transfers it to the deposition zone safely. |
-
----
-
 ## 🚀 Execution & Command Reference
 
 To launch this environment and execute the Pick & Place task, open your terminal and follow these steps:
